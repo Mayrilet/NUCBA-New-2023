@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form HTML</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>CLASE BASICA FORMULARIO</h1>
+        </header>
+        <section>
+            <form action="./form-reult.php" method="post" target="_self"><!--Aqui empieza la etiqueta de apertura del formulario-->
+                <!--Input de texto con label-->
+                <label for="name">Nombre:</label><input type="text" name="nombre"><br><br>
+                <!--Input de texto con label-->
+                <label for="apellidos">Apellidos:</label><input type="text" name="Apellidos"><br><br>
+                <!--Input numérico con label -->
+                <label for="edad">Edad:</label><input type="number" name="edad"><br><br>
+                <!--Input email-->
+                <label for="email">Email:</label><input type="email" name="email"><br><br>
+                <span>Esto ocurre si quito la etiqueta br, porque son elementos en linea:</span><br><br>
+                <label for="name">Nombre:</label><input type="text" name="nombre">
+                <!--Input de texto con label-->
+                <label for="apellidos">Apellidos:</label><input type="text" name="Apellidos">
+                <!--Input numérico con label -->
+                <label for="edad">Edad:</label><input type="number" name="edad">
+                <!--Input email-->
+                <label for="email">Email:</label><input type="email" name="email"><br><br>
+                <span>Uso del atributo placeholder:</span><br><br>
+                <label for="password">Password:</label><input type="email" name="password" placeholder="Introduce una clave"><br><br>
+                <!--Checkbox-->
+                <h2>Checkbox</h2>
+                <label for="checkbox">Selecciona el vehículo que posea:</label><br>
+                <input type="checkbox" id="vehiculo1" name="vehiculo1" value="auto">
+                <label for="vehiculo1">auto</label>
+                <input type="checkbox" id="vehiculo2" name="vehiculo2" value="motocicleta">
+                <label for="vehiculo2">motocicleta</label>
+                <input type="checkbox" id="vehiculo3" name="vehiculo3" value="bicicleta">
+                <label for="vehiculo3">bicicleta</label><br><br>
+                <!--Select-->
+                <h3>Opción de selección</h3>
+                <label for="ejemplo">¿Jugamos?</label>
+                <select name="ejemplo">
+                    <option value="piedra">Piedra</option>
+                    <option value="papel">Papel</option>
+                    <option value="tijera">Tijera</option>
+                </select>
+                <h4>Opción de Radiobuttom</h4>
+                <label for="Sexo">Con que género te identificas:</label><br>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="sexo" value="femenino">
+                <label for="Femenino">Femenino</label>
+                <input type="radio" id="nobinario" name="sexo" value="nobinario">
+                <label for="nobinario">No Binario</label>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label><br><br>
+                <input type="submit" value="Enviar"
+            </form>
+
+            <form action="./form-reult.php" method="post" target="_self"><!--Aqui empieza la etiqueta de apertura del formulario-->
+                
+                <ul>
+                    <li>
+                        <label for="name">Nombre:</label><input type="text" name="nombre">
+                    </li>
+                    <li>
+                        <label for="apellidos">Apellidos:</label><input type="text" name="Apellidos">
+                    </li>
+                    <li>
+                        <label for="edad">Edad:</label><input type="number" name="edad">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label><input type="email" name="email">
+                    </li>
+                    <li>
+                        <label for="password">Password:</label><input type="email" name="password" placeholder="Introduce una clave">
+                    </li>
+                    <li>
+                        <label for="checkbox">Selecciona el vehículo que posea:</label>
+                        <input type="checkbox" id="vehiculo1" name="vehiculo1" value="auto">
+                        <label for="vehiculo1">auto</label>
+                        <input type="checkbox" id="vehiculo2" name="vehiculo2" value="motocicleta">
+                        <label for="vehiculo2">motocicleta</label>
+                        <input type="checkbox" id="vehiculo3" name="vehiculo3" value="bicicleta">
+                        <label for="vehiculo3">bicicleta</label>
+                    </li>
+                    <li>
+                        <label for="ejemplo">¿Jugamos?</label>
+                        <select name="ejemplo">
+                            <option value="piedra">Piedra</option>
+                            <option value="papel">Papel</option>
+                            <option value="tijera">Tijera</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="Sexo">Con que género te identificas:</label><br>
+                        <input type="radio" id="masculino" name="sexo" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="sexo" value="femenino">
+                        <label for="Femenino">Femenino</label>
+                        <input type="radio" id="nobinario" name="sexo" value="nobinario">
+                        <label for="nobinario">No Binario</label>
+                        <input type="radio" id="otro" name="sexo" value="otro">
+                        <label for="otro">Otro</label>
+                    </li>
+                </ul>
+                <input type="submit" value="Enviar"
+            </form>
+        </section>
+    </main>
+</body>
+</html>
